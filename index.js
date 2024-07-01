@@ -21,6 +21,7 @@ UtcDay.setAttribute("data-testid", dayUtc)
 const hour = now.getHours();
 const minutes = now.getUTCMinutes();
 utcTime.textContent = `${hour}:${minutes}`;
+utcTime.setAttribute("data-testid", now.getTime())
 
 const date = now.getUTCDate()
 UtcDate.setAttribute("data-testid", date)
@@ -30,5 +31,6 @@ UtcDate.textContent = `${String(date).padStart(2, 0)}/${String(
   month + 1
 ).padStart(2, 0)}/${year}`;
 
-// console.log(UtcDate.getAttribute("data-testid"))
-// console.log(UtcDay.getAttribute("data-testid"))
+console.log(UtcDate.getAttribute("data-testid"))
+console.log(UtcDay.getAttribute("data-testid"))
+console.log(utcTime.getAttribute("data-testid"))
