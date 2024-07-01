@@ -1,11 +1,6 @@
 const UtcDay = document.querySelector("#utcDay");
 const UtcDate = document.querySelector("#date");
-const now = new Date();
-const today = now.getUTCDay();
-const date = now.getUTCDate()
-const month = now.getUTCMonth();
-const year = now.getUTCFullYear();
-
+const utcTime = document.querySelector("#utcTime");
 const daysOfTheWeek = [
   "Sunday",
   "monday",
@@ -15,9 +10,21 @@ const daysOfTheWeek = [
   "friday",
   "saturday",
 ];
+
+const now = new Date();
+
+const today = now.getUTCDay();
 const dayUtc = daysOfTheWeek[today];
 UtcDay.textContent = `${dayUtc}, `;
+
+const hour = now.getHours();
+const minutes = now.getUTCMinutes();
+utcTime.textContent = `${hour}:${minutes}`;
+
+const date = now.getUTCDate()
+const month = now.getUTCMonth();
+const year = now.getUTCFullYear();
 UtcDate.textContent = `${String(date).padStart(2, 0)}/${String(
   month + 1
 ).padStart(2, 0)}/${year}`;
-// , 
+

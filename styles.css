@@ -10,7 +10,6 @@ body {
     max-width: 100%;
     width: 1280px;
     margin: auto;
-    /* background: #000; */
 }
 
 nav {
@@ -19,19 +18,15 @@ nav {
     justify-content: space-between;
     margin: 5px 24px;
     align-items: center;
-    /* background: #000; */
+    text-transform: capitalize;
+    
     
 }
 
 nav h1 {
     font-family: monospace;
-    text-transform: capitalize;
     text-decoration: line-through;
     font-size: 28px;
-}
-.utc {
-    text-transform: capitalize;
-    font-size: 15px;
 }
 
 
@@ -40,11 +35,9 @@ nav h1 {
     display: flex;
     gap: 1.4rem;
     line-height: 1.5rem;
-    /* background: #000; */
 }
 .image{
    width: 100%;
-    height: auto;
 }
 
 .details {
@@ -66,7 +59,6 @@ span.name {
 
 .profile img {
     max-width: 100%;
-    height: auto;
     
 }
 
@@ -85,11 +77,11 @@ section ul {
     list-style: none;
 }
 
-@media screen and (max-width: 920px){
-.image {
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 350px){
+nav div{
+      display: none;
     }
+    
 }
 
 
@@ -104,5 +96,9 @@ section ul {
             
             font-size: 0.9rem;
         }
+                .image {
+                    display: flex;
+                    justify-content: center;
+                }
 } 
 
