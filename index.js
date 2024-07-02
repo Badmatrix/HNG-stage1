@@ -31,6 +31,6 @@ UtcDate.textContent = `${String(date).padStart(2, 0)}/${String(
   month + 1
 ).padStart(2, 0)}/${year}`;
 
-console.log(UtcDate.getAttribute("data-testid"))
-console.log(UtcDay.getAttribute("data-testid"))
-console.log(utcTime.getAttribute("data-testid"))
+// console.log(UtcDate.getAttribute("data-testid"))
+// console.log(UtcDay.getAttribute("data-testid"))
+// console.log(utcTime.getAttribute("data-testid"))
